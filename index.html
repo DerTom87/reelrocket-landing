@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reelrocket — Bau virale Videos nach</title>
+<meta name="description" content="Reelrocket nimmt ein virales Video, versteht warum es zündet, dreht die Machart auf dein Produkt — und baut den fertigen Post. Von der Idee bis zur Veröffentlichung." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Reelrocket — Bau virale Videos nach" />
+<meta property="og:description" content="Aus viral wird deins. Machart übernehmen, Botschaft neu — von der Idee bis zum fertigen Post." />
+<meta property="og:url" content="https://reelrocket.de" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Reelrocket — Bau virale Videos nach" />
+<meta name="twitter:description" content="Aus viral wird deins. Machart übernehmen, Botschaft neu — von der Idee bis zum fertigen Post." />
+<meta name="theme-color" content="#16111d" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=clash-display@600,700&f%5B%5D=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --space: #16111d;
+    --space-2: #1e1727;
+    --space-3: #2a2036;
+    --line: #2f2540;
+    --creme: #faf6f1;
+    --creme-2: #f1e9df;
+    --creme-ink: #1a1420;
+    --creme-dim: #6b6070;
+    --ignition: #ff4e1a;
+    --ignition-2: #ff6a34;
+    --ignition-soft: rgba(255, 78, 26, 0.13);
+    --flare: #ff2d78;
+    --ember: #ffb020;
+    --text: #f3ecee;
+    --text-dim: #b6aaba;
+    --text-faint: #837690;
+    --display: "Clash Display", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --body: "Satoshi", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--space); color: var(--text); font-family: var(--body); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2.4rem); }
+  a { color: inherit; text-decoration: none; }
+
+  .display { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; }
+  .grad { background: linear-gradient(96deg, var(--ember) 0%, var(--ignition) 45%, var(--flare) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ignition); font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem; }
+  .eyebrow::before { content: "▲"; font-size: 0.6rem; transform: translateY(-1px); }
+
+  .btn { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--display); font-weight: 700; font-size: 1rem; border-radius: 12px; padding: 0.85rem 1.5rem; border: none; cursor: pointer; letter-spacing: -0.01em; transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease; text-align: center; }
+  .btn.primary { background: var(--ignition); color: #fff; box-shadow: 0 8px 30px rgba(255,78,26,0.28); }
+  .btn.primary:hover { background: var(--ignition-2); transform: translateY(-2px); box-shadow: 0 12px 38px rgba(255,78,26,0.38); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn.ghost:hover { border-color: var(--text-faint); }
+  .btn:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; }
+
+  nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background: rgba(22,17,29,0.72); border-bottom: 1px solid var(--line); }
+  nav .row { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 1.2rem; letter-spacing: -0.03em; display: inline-flex; align-items: center; gap: 0.45rem; }
+  .brand .mark { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 0.4em; background: var(--ignition); color: #fff; font-size: 0.62em; }
+  nav .btn { padding: 0.55rem 1.1rem; font-size: 0.9rem; }
+
+  .hero { position: relative; padding: clamp(4rem, 11vw, 8rem) 0 clamp(3rem, 7vw, 5.5rem); overflow: hidden; }
+  .hero::before { content: ""; position: absolute; z-index: 0; left: 50%; top: -10%; width: min(130vw, 1300px); height: 760px; transform: translateX(-50%) rotate(-14deg); background: radial-gradient(52% 50% at 50% 55%, rgba(255,78,26,0.26), transparent 70%), radial-gradient(42% 38% at 63% 42%, rgba(255,45,120,0.18), transparent 72%); filter: blur(6px); pointer-events: none; }
+  .hero .wrap { position: relative; z-index: 1; }
+  .hero h1 { font-size: clamp(2.7rem, 8.5vw, 5.8rem); line-height: 0.98; margin: 1.2rem 0 0; max-width: 15ch; text-wrap: balance; }
+  .hero .sub { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: var(--text-dim); margin: 1.5rem 0 0; max-width: 52ch; }
+  .hero .cta-row { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 2.3rem; }
+  .hero .trust { margin-top: 1.5rem; font-family: var(--mono); font-size: 0.76rem; color: var(--text-faint); letter-spacing: 0.03em; }
+
+  section { padding: clamp(3.2rem, 8vw, 6rem) 0; }
+  .band-line { border-top: 1px solid var(--line); }
+  h2 { font-family: var(--display); font-weight: 700; letter-spacing: -0.025em; line-height: 1.04; font-size: clamp(2rem, 5vw, 3.3rem); margin: 0.7rem 0 1rem; text-wrap: balance; }
+  .lead { font-size: clamp(1.1rem, 2.2vw, 1.35rem); color: var(--text-dim); max-width: 60ch; text-wrap: pretty; }
+  p, .sub { text-wrap: pretty; }
+  .kicker { font-family: var(--mono); font-size: 0.73rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-faint); font-weight: 600; }
+
+  .problem { text-align: center; }
+  .problem .wrap { max-width: 820px; }
+  .problem h2 { margin-inline: auto; }
+  .problem .lead { margin-inline: auto; }
+  .problem .hot { color: var(--ignition); }
+
+  .how { background: var(--creme); color: var(--creme-ink); }
+  .how .kicker { color: var(--creme-dim); }
+  .how .lead { color: var(--creme-dim); }
+  .steps { display: grid; gap: 1rem; margin-top: 2.6rem; grid-template-columns: 1fr; }
+  @media (min-width: 620px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1000px) { .steps { grid-template-columns: repeat(5, 1fr); } }
+  .step { background: #fff; border: 1px solid var(--creme-2); border-radius: 16px; padding: 1.5rem 1.4rem; position: relative; }
+  .step .n { font-family: var(--display); font-weight: 700; font-size: 1.5rem; width: 2.3rem; height: 2.3rem; border-radius: 0.6rem; background: var(--ignition-soft); color: var(--ignition); display: grid; place-items: center; letter-spacing: -0.03em; }
+  .step h3 { font-family: var(--display); font-weight: 700; letter-spacing: -0.015em; font-size: 1.12rem; margin: 1rem 0 0.4rem; }
+  .step p { margin: 0; font-size: 0.94rem; color: var(--creme-dim); line-height: 1.55; }
+
+  .feat-grid { display: grid; gap: 1rem; margin-top: 2.6rem; grid-template-columns: 1fr; }
+  @media (min-width: 560px) { .feat-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) { .feat-grid { grid-template-columns: repeat(4, 1fr); } }
+  .feat { background: var(--space-2); border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem 1.5rem; }
+  .feat .ic { width: 2.4rem; height: 2.4rem; border-radius: 0.7rem; background: var(--ignition-soft); color: var(--ignition); display: grid; place-items: center; font-size: 1.2rem; }
+  .feat h3 { font-family: var(--display); font-weight: 700; letter-spacing: -0.015em; font-size: 1.15rem; margin: 1rem 0 0.4rem; }
+  .feat p { margin: 0; font-size: 0.95rem; color: var(--text-dim); line-height: 1.55; }
+
+  .aud { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+  .aud span { font-family: var(--display); font-weight: 700; font-size: 0.95rem; border: 1px solid var(--line); border-radius: 99px; padding: 0.5rem 1.1rem; color: var(--text-dim); }
+
+  .price-grid { display: grid; gap: 1.1rem; margin-top: 2.6rem; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .price-grid { grid-template-columns: repeat(2, 1fr); } }
+  .plan { border: 1px solid var(--line); border-radius: 18px; padding: 1.8rem; background: var(--space-2); display: flex; flex-direction: column; gap: 0.6rem; }
+  .plan.feature { border-color: color-mix(in srgb, var(--ignition) 50%, transparent); background: linear-gradient(180deg, var(--ignition-soft), var(--space-2) 40%); }
+  .plan .tag { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ignition); font-weight: 700; }
+  .plan h3 { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; font-size: 1.5rem; margin: 0.3rem 0 0.2rem; }
+  .plan .who { color: var(--text-dim); font-size: 0.95rem; margin: 0 0 0.6rem; }
+  .plan ul { list-style: none; padding: 0; margin: 0.4rem 0 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  .plan li { display: grid; grid-template-columns: auto 1fr; gap: 0.6rem; font-size: 0.94rem; color: var(--text-dim); align-items: start; }
+  .plan li::before { content: "▲"; color: var(--ignition); font-size: 0.6rem; margin-top: 0.42rem; }
+  .price-note { margin-top: 1.6rem; text-align: center; font-size: 0.9rem; color: var(--text-faint); }
+
+  .cta { background: linear-gradient(120deg, var(--ignition), var(--flare)); color: #fff; text-align: center; }
+  .cta h2 { color: #fff; }
+  .cta p { color: rgba(255,255,255,0.9); max-width: 46ch; margin: 0.8rem auto 0; font-size: 1.1rem; }
+  .signup { display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; margin-top: 2rem; }
+  .signup .btn { background: var(--space); color: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.25); font-size: 1.05rem; padding: 0.95rem 1.7rem; }
+  .signup .btn:hover { background: #241b30; transform: translateY(-2px); }
+  .cta .fine { color: rgba(255,255,255,0.85); font-size: 0.85rem; margin-top: 1.1rem; }
+
+  footer { padding: 3rem 0; border-top: 1px solid var(--line); }
+  footer .row { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; }
+  footer .tag { color: var(--text-faint); font-size: 0.9rem; }
+  footer a.mail { color: var(--text-dim); }
+  footer a.mail:hover { color: var(--ignition); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .rise { opacity: 0; transform: translateY(16px); animation: rise 0.7s cubic-bezier(0.2,0.7,0.2,1) forwards; }
+    .rise.d1 { animation-delay: 0.08s; } .rise.d2 { animation-delay: 0.16s; } .rise.d3 { animation-delay: 0.26s; } .rise.d4 { animation-delay: 0.36s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap row">
+    <a href="#top" class="brand"><span class="mark">▲</span>reelrocket</a>
+    <a href="#start" class="btn primary">Früher Zugang</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow rise">Der virale Video-Autopilot</span>
+    <h1 class="display rise d1">Aus viral wird <span class="grad">deins</span>.</h1>
+    <p class="sub rise d2">Reelrocket nimmt ein virales Video, versteht warum es zündet, dreht die Machart auf dein Produkt — und baut den fertigen Post. Von der Idee bis zur Veröffentlichung.</p>
+    <div class="cta-row rise d3">
+      <a href="#start" class="btn primary">▲ Sichere dir frühen Zugang</a>
+      <a href="#how" class="btn ghost">So funktioniert's</a>
+    </div>
+    <p class="trust rise d4">Kein Kopieren — Machart übernehmen, Botschaft neu · TikTok &amp; Instagram · deine Marke, deine Regeln</p>
+  </div>
+</header>
+
+<section class="problem band-line">
+  <div class="wrap">
+    <p class="kicker">Warum überhaupt</p>
+    <h2>Noch ein Post, den <span class="hot">keiner sieht</span>?</h2>
+    <p class="lead">Reichweite kommt nicht von <em>mehr</em> Content. Sie kommt von Content, der ein bewährtes virales Muster trifft — Hook, Aufbau, Timing. Das per Hand nachzubauen kostet Tage. Reelrocket macht es wiederholbar: du lieferst das Thema, das Muster kommt aus dem, was schon funktioniert hat.</p>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <p class="kicker">So funktioniert's</p>
+    <h2 class="display">Vom viralen Vorbild zum eigenen Post — in fünf Schritten.</h2>
+    <p class="lead">Ein durchgehender Ablauf. Du triffst die Entscheidungen, Reelrocket macht die Arbeit.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Video einwerfen</h3><p>Link zu einem viralen Video rein. Reelrocket lädt es, zerlegt Bild und Ton.</p></div>
+      <div class="step"><div class="n">2</div><h3>Machart verstehen</h3><p>Der Hook, der Aufbau, warum es zieht — als klare Vorlage herausgearbeitet.</p></div>
+      <div class="step"><div class="n">3</div><h3>Auf dein Thema drehen</h3><p>Deine Botschaft, deine Marke, deine Tabus. Struktur übernehmen, Inhalt neu — kein Plagiat.</p></div>
+      <div class="step"><div class="n">4</div><h3>Video &amp; Untertitel</h3><p>Fertiges Video mit eingebrannten Wort-Untertiteln. Posting-fertig, auch ohne Ton verständlich.</p></div>
+      <div class="step"><div class="n">5</div><h3>Freigeben</h3><p>Ein Klick. Der Rest läuft in der Cloud — auch wenn dein Rechner aus ist.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-line">
+  <div class="wrap">
+    <p class="kicker">Warum Reelrocket</p>
+    <h2 class="display">Alles in einem Ablauf. Nichts zusammengeflickt.</h2>
+    <div class="feat-grid">
+      <div class="feat"><div class="ic">◎</div><h3>Ende zu Ende</h3><p>Von der Analyse bis zum Post — ein Werkzeug statt fünf Tools und Copy-Paste dazwischen.</p></div>
+      <div class="feat"><div class="ic">✦</div><h3>Deine Marke, deine Regeln</h3><p>Hinterlege Ton und Tabus (z. B. keine Heilversprechen). Reelrocket hält sie in jedem Text ein.</p></div>
+      <div class="feat"><div class="ic">↗</div><h3>Kein Kopieren</h3><p>Die Machart wird übernommen, die Botschaft neu gebaut — sauber, eigenständig, compliance-fest.</p></div>
+      <div class="feat"><div class="ic">◈</div><h3>Direkt raus</h3><p>TikTok und Instagram, geplant oder sofort. Verbinde deinen Account, der Rest passiert automatisch.</p></div>
+    </div>
+    <p class="kicker" style="margin-top:3rem">Für wen</p>
+    <div class="aud">
+      <span>Creator</span>
+      <span>Kleine Marken &amp; Selbstständige</span>
+      <span>Social-Media-Agenturen</span>
+      <span>Wellness, Beauty &amp; Nische</span>
+    </div>
+  </div>
+</section>
+
+<section class="band-line">
+  <div class="wrap">
+    <p class="kicker">Preise</p>
+    <h2 class="display">Zwei Wege — such dir deinen aus.</h2>
+    <p class="lead">Ob du eigene KI-Zugänge mitbringst oder alles aus einer Hand willst: beides geht.</p>
+    <div class="price-grid">
+      <div class="plan">
+        <span class="tag">Eigene Zugänge</span>
+        <h3>Pro</h3>
+        <p class="who">Für Profis &amp; Agenturen mit eigenem Setup.</p>
+        <ul>
+          <li>Du nutzt deine eigenen KI-Zugänge</li>
+          <li>Keine Erstellungs-Limits</li>
+          <li>Günstigerer Software-Preis</li>
+          <li>Alle Funktionen, alle Plattformen</li>
+        </ul>
+      </div>
+      <div class="plan feature">
+        <span class="tag">Rundum sorglos</span>
+        <h3>Starter</h3>
+        <p class="who">Für alle, die einfach loslegen wollen.</p>
+        <ul>
+          <li>Nichts einrichten — sofort startklar</li>
+          <li>KI-Kosten inklusive</li>
+          <li>Faires Monats-Kontingent</li>
+          <li>Alle Funktionen, alle Plattformen</li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note">Genaue Preise nennen wir zum Start. Melde dich jetzt — die Ersten bekommen frühen Zugang und Früh-Konditionen.</p>
+  </div>
+</section>
+
+<section class="cta" id="start">
+  <div class="wrap">
+    <h2 class="display">Bereit zum Abheben?</h2>
+    <p>Reelrocket ist im Aufbau. Schreib uns kurz — wir setzen dich auf die Liste und melden uns als Erstes bei dir, wenn es losgeht.</p>
+    <div class="signup">
+      <a href="mailto:info@reelrocket.de?subject=Reelrocket%20Warteliste&amp;body=Ich%20will%20fr%C3%BChen%20Zugang%20zu%20Reelrocket." class="btn">▲ Schreib uns — sei früh dabei</a>
+    </div>
+    <p class="fine">Direkt an info@reelrocket.de · kein Spam, nur eine Nachricht, wenn es losgeht.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <a href="#top" class="brand"><span class="mark">▲</span>reelrocket</a>
+    <span class="tag">Bau virale Videos nach. Zünde deine Reichweite.</span>
+    <a href="mailto:info@reelrocket.de" class="mail">info@reelrocket.de</a>
+  </div>
+</footer>
+</body>
+</html>
