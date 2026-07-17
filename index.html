@@ -43,12 +43,12 @@
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2.4rem); }
   a { color: inherit; text-decoration: none; }
 
-  .display { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; }
+  .display { font-family: var(--display); font-weight: 700; letter-spacing: -0.005em; }
   .grad { background: linear-gradient(96deg, var(--ember) 0%, var(--ignition) 45%, var(--flare) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ignition); font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem; }
   .eyebrow::before { content: "▲"; font-size: 0.6rem; transform: translateY(-1px); }
 
-  .btn { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--display); font-weight: 700; font-size: 1rem; border-radius: 12px; padding: 0.85rem 1.5rem; border: none; cursor: pointer; letter-spacing: -0.01em; transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease; text-align: center; }
+  .btn { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--display); font-weight: 700; font-size: 1rem; border-radius: 12px; padding: 0.85rem 1.5rem; border: none; cursor: pointer; letter-spacing: 0.005em; transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease; text-align: center; }
   .btn.primary { background: var(--ignition); color: #fff; box-shadow: 0 8px 30px rgba(255,78,26,0.28); }
   .btn.primary:hover { background: var(--ignition-2); transform: translateY(-2px); box-shadow: 0 12px 38px rgba(255,78,26,0.38); }
   .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
@@ -57,7 +57,7 @@
 
   nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background: rgba(22,17,29,0.72); border-bottom: 1px solid var(--line); }
   nav .row { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-  .brand { font-family: var(--display); font-weight: 700; font-size: 1.2rem; letter-spacing: -0.03em; display: inline-flex; align-items: center; gap: 0.45rem; }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 1.2rem; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 0.45rem; }
   .brand .mark { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 0.4em; background: var(--ignition); color: #fff; font-size: 0.62em; }
   nav .btn { padding: 0.55rem 1.1rem; font-size: 0.9rem; }
 
@@ -71,7 +71,7 @@
 
   section { padding: clamp(3.2rem, 8vw, 6rem) 0; }
   .band-line { border-top: 1px solid var(--line); }
-  h2 { font-family: var(--display); font-weight: 700; letter-spacing: -0.025em; line-height: 1.04; font-size: clamp(2rem, 5vw, 3.3rem); margin: 0.7rem 0 1rem; text-wrap: balance; }
+  h2 { font-family: var(--display); font-weight: 700; letter-spacing: -0.012em; line-height: 1.04; font-size: clamp(2rem, 5vw, 3.3rem); margin: 0.7rem 0 1rem; text-wrap: balance; }
   .lead { font-size: clamp(1.1rem, 2.2vw, 1.35rem); color: var(--text-dim); max-width: 60ch; text-wrap: pretty; }
   p, .sub { text-wrap: pretty; }
   .kicker { font-family: var(--mono); font-size: 0.73rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-faint); font-weight: 600; }
