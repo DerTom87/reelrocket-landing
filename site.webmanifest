@@ -1,0 +1,13 @@
+{
+  "name": "Reelrocket",
+  "short_name": "Reelrocket",
+  "description": "Der virale Video-Autopilot — aus viral wird deins.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16111d",
+  "theme_color": "#16111d",
+  "icons": [
+    { "src": "/favicon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
